@@ -57,6 +57,7 @@
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",
     "@tailwindcss/typography": "^0.5.7",
+    "@typescript-eslint/parser": "^7.5.0",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
@@ -80,6 +81,11 @@
     },
     "rules": {}
   },
+  "eslintIgnore": [
+    "dist",
+    "node_modules",
+    "lib"
+  ],
   "browserslist": [
     "> 1%",
     "last 2 versions",

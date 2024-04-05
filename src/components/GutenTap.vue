@@ -348,20 +348,29 @@ export default {
       type: String,
       default: "html",
     },
+    placeholder: {
+      type: String,
+      required: false,
+      default: "Type / to choose a block"
+    },
     extensions: {
       type: Array,
+      // eslint-disable-next-line vue/require-valid-default-prop
       default: [],
     },
     blockTools: {
       type: Array,
+      // eslint-disable-next-line vue/require-valid-default-prop
       default: [],
     },
     inlineTools: {
       type: Array,
+      // eslint-disable-next-line vue/require-valid-default-prop
       default: [],
     },
     alignmentTools: {
       type: Array,
+      // eslint-disable-next-line vue/require-valid-default-prop
       default: [],
     },
   },
@@ -429,7 +438,7 @@ export default {
             openOnClick: false,
           }),
           Placeholder.configure({
-            placeholder: "Type / to choose a block",
+            placeholder: this.placeholder,
           }),
           BlockWidth.configure({
             types: ["paragraph", "horizontalRule", "blockquote", "youtube"],
